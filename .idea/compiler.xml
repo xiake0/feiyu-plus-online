@@ -6,14 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="common" />
         <module name="gateway" />
+        <module name="interface" />
         <module name="registry" />
+        <module name="service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
       <module name="feiyu-plus-online" target="1.8" />
       <module name="gateway" target="1.8" />
+      <module name="interface" target="1.8" />
       <module name="registry" target="1.8" />
+      <module name="service" target="1.8" />
+      <module name="user8084" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

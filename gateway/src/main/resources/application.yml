@@ -1,3 +1,6 @@
+#网关，由nginx监听80，转发到10081
+#启动：start nginx.exe
+#重新加载：nginx.exe -s reload
 server:
   port: 10081
 
@@ -12,7 +15,7 @@ eureka:
     registry-fetch-interval-seconds: 5
 zuul:
   prefix: /api
-#  routes:
-#    item-service: /item/**
+  routes:
+    user-service: /user/**
 
 
