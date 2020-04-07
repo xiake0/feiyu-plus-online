@@ -1,0 +1,34 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: video-service
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/feiyu-plus?characterEncoding=utf8&useSSL=false&useTimeZone=true&serverTimezone=GMT%2b8&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+      username: root
+      password: myroot
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+  instance:
+    lease-expiration-duration-in-seconds: 15 #过期时间
+    lease-renewal-interval-in-seconds: 5   #心跳时间
+
+mybatis:
+  type-aliases-package: com.entity  #因为已经依赖interface，所以可以直接扫描
+
+
+#七牛云sdk
+qiniu:
+  accessKey: 5C_fZFpH2vB2DZ6IRc0dhtOWMZ-83Y_sKKiH63vU
+  secretKey: PDoHLfN8vQFm2KraiW9Y6E3puD9yYRMaFFZu8CyJ
+  bucket: xiake-project
+  path: q8es6w99e.bkt.clouddn.com
+

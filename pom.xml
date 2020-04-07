@@ -11,7 +11,9 @@
         <module>registry</module>
         <module>gateway</module>
         <module>common</module>
-        <module>user8084</module>
+        <module>feiyu-user</module>
+        <module>config</module>
+        <module>feiyu-video</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -36,6 +38,7 @@
         <mysql.version>5.1.47</mysql.version>
         <jackson.databind.version>2.9.6</jackson.databind.version>
         <lombok.version>1.18.4</lombok.version>
+        <qiniu.version>[7.2.0, 7.2.99]</qiniu.version>
     </properties>
 
     <dependencyManagement>
@@ -84,11 +87,11 @@
                 <version>${jackson.databind.version}</version>
             </dependency>
 
-            <!--lombok-->
+            <!-- 七牛云SDK -->
             <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
+                <groupId>com.qiniu</groupId>
+                <artifactId>qiniu-java-sdk</artifactId>
+                <version>${qiniu.version}</version>
             </dependency>
 
         </dependencies>

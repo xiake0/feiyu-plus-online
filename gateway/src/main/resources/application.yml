@@ -17,5 +17,6 @@ zuul:
   prefix: /api
   routes:
     user-service: /user/**
+    video-service: /video/**
 
 

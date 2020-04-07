@@ -4,11 +4,16 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/feiyu-user/pom.xml" />
+        <option value="$PROJECT_DIR$/feiyu-video/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/feiyu-video/interface/pom.xml" />
+        <option value="$PROJECT_DIR$/feiyuvideo/pom.xml" />
         <option value="$PROJECT_DIR$/user8084/pom.xml" />
+        <option value="$PROJECT_DIR$/video8085/pom.xml" />
       </set>
     </option>
   </component>

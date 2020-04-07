@@ -3,12 +3,16 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
       <module fileurl="file://$PROJECT_DIR$/feiyu-plus-online.iml" filepath="$PROJECT_DIR$/feiyu-plus-online.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feiyu-user/feiyu-user.iml" filepath="$PROJECT_DIR$/feiyu-user/feiyu-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feiyu-video/feiyu-video.iml" filepath="$PROJECT_DIR$/feiyu-video/feiyu-video.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user8084/interface/interface.iml" filepath="$PROJECT_DIR$/user8084/interface/interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/registry/registry.iml" filepath="$PROJECT_DIR$/registry/registry.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user8084/service/service.iml" filepath="$PROJECT_DIR$/user8084/service/service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user8084/user8084.iml" filepath="$PROJECT_DIR$/user8084/user8084.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feiyu-user/user-interface/user-interface.iml" filepath="$PROJECT_DIR$/feiyu-user/user-interface/user-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feiyu-user/user-service/user-service.iml" filepath="$PROJECT_DIR$/feiyu-user/user-service/user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feiyu-video/video-interface/video-interface.iml" filepath="$PROJECT_DIR$/feiyu-video/video-interface/video-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feiyu-video/video-service/video-service.iml" filepath="$PROJECT_DIR$/feiyu-video/video-service/video-service.iml" />
     </modules>
   </component>
 </project>
