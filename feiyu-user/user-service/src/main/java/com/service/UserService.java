@@ -13,7 +13,7 @@ public interface UserService extends IService<User> {
 
 //    IPage<User> getByCondition(PageVo pageVo, User user, DateVo dateVo);
 //
-//    void addUser(User user);
+    void addUser();
 //
 //    Integer getCounts(String username);
 }

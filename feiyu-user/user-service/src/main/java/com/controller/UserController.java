@@ -28,7 +28,14 @@ public class UserController {
 
     @GetMapping("get")
     public Result<User> getUser(){
-        return new ResultUtil<User>().setData(userService.getUserByUsername("admin"));
+        userService.addUser();
+        return new ResultUtil<User>().setSuccessMsg("success");
+    }
+
+    @GetMapping("add")
+    public Result<Object> addUser(){
+        userService.addUser();
+        return new ResultUtil<Object>().setSuccessMsg("success");
     }
 
 }

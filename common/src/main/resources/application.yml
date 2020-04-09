@@ -1,7 +1,0 @@
-
-#七牛云sdk
-qiniu:
-  accessKey: 5C_fZFpH2vB2DZ6IRc0dhtOWMZ-83Y_sKKiH63vU
-  secretKey: PDoHLfN8vQFm2KraiW9Y6E3puD9yYRMaFFZu8CyJ
-  bucket: xiake-project
-  path: q8es6w99e.bkt.clouddn.com

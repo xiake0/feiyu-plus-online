@@ -66,16 +66,18 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 //        return iPage;
 //    }
 //
-//    /**
-//     * 添加新用户
-//     *
-//     * @param user
-//     */
-//    @Override
-//    public void addUser(User user) {
-//        user.setPassword(encoder.encode(user.getPassword()));
-//        userMapper.insert(user);
-//    }
+    /**
+     * 添加新用户
+     *
+     * @param user
+     */
+    @Override
+    public void addUser() {
+        User user=new User();
+        user.setUsername("tss");
+        user.setPassword("rrr");
+        userMapper.insert(user);
+    }
 //
 //    /**
 //     * 验证数据库是否存在该用户

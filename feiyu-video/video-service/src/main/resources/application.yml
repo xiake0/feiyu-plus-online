@@ -5,6 +5,12 @@ spring:
   application:
     name: video-service
 
+#请求文件的最大值
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
@@ -31,4 +37,5 @@ qiniu:
   secretKey: PDoHLfN8vQFm2KraiW9Y6E3puD9yYRMaFFZu8CyJ
   bucket: xiake-project
   path: q8es6w99e.bkt.clouddn.com
+
 

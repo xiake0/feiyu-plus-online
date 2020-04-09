@@ -15,17 +15,17 @@ import lombok.Data;
 public class Player extends BaseEntity{
 
     //视频名称
-    private String name;
+    private String title;
 
     //观看数量
     private Integer view;
-
-    //评论数
-    private Integer comment;
 
     //地址
     private String url;
 
     //封面
     private String pic;
+
+    //作者
+    private String ownerId;
 }

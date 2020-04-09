@@ -1,14 +1,14 @@
 package com.controller;
 
+import com.entity.Player;
 import com.service.PlayerService;
 import com.utils.QiniuUtil;
+import com.utils.ResultUtil;
+import com.vo.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.FileInputStream;
@@ -26,7 +26,7 @@ public class PlayerController {
     private static final Logger logger = LoggerFactory.getLogger(QiniuUtil.class);
 
     @Autowired
-    private PlayerService videoService;
+    private PlayerService playerService;
 
     @Autowired
     private QiniuUtil qiniuUtil;
@@ -36,7 +36,13 @@ public class PlayerController {
         logger.info(multipartFile.toString());
         FileInputStream inputStream = (FileInputStream) multipartFile.getInputStream();
         logger.info(inputStream.toString());
-        String path = qiniuUtil.uploadImg(inputStream, "admin"+"_"+111);
+        String path = qiniuUtil.uploadImg(inputStream, "admin"+"_"+11);
         return path;
+    }
+
+    //获取推荐视频
+    @GetMapping("recommend")
+    public Result<Player> getRecommendVideo(){
+     return new ResultUtil<Player>().setData(playerService.getRecommend());
     }
 }
