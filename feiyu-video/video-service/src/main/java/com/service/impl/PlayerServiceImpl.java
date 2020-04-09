@@ -7,6 +7,8 @@ import com.service.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @Author: xiake
  * @Date: 2020/4/7 15:23
@@ -19,8 +21,9 @@ public class PlayerServiceImpl extends ServiceImpl<PlayerMapper, Player> impleme
     @Autowired
     private PlayerMapper playerMapper;
 
+    //获取推荐视频
     @Override
-    public Player getRecommend() {
+    public List<Player> getRecommend() {
         return playerMapper.getRecommend();
     }
 }

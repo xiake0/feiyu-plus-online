@@ -13,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * @Author: xiake
@@ -42,7 +43,7 @@ public class PlayerController {
 
     //获取推荐视频
     @GetMapping("recommend")
-    public Result<Player> getRecommendVideo(){
-     return new ResultUtil<Player>().setData(playerService.getRecommend());
+    public Result<List<Player>> getRecommendVideo(){
+     return new ResultUtil<List<Player>>().setData(playerService.getRecommend());
     }
 }

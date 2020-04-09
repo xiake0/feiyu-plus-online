@@ -12,5 +12,5 @@ import java.util.List;
  **/
 public interface PlayerService  extends IService<Player> {
 
-    Player getRecommend();
+    List<Player> getRecommend();
 }

@@ -26,6 +26,9 @@ public class Player extends BaseEntity{
     //封面
     private String pic;
 
-    //作者
+    //视频介绍
+    private String introduction;
+
+    //视频作者
     private String ownerId;
 }
