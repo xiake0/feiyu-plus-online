@@ -49,7 +49,4 @@ public class User extends BaseEntity {
     @TableField(exist = false)
     private List<Role> roles;
 
-    //用户拥有的权限
-    @TableField(exist = false)
-    private List<Menu> permissions;
 }

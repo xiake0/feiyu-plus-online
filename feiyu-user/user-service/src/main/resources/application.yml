@@ -23,3 +23,15 @@ eureka:
 
 mybatis:
   type-aliases-package: com.entity  #因为已经依赖interface，所以可以直接扫描
+mybatis-plus:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.entity
+  global-config:
+    db-column-underline: true
+    db-config:
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+  configuration:
+    map-underscore-to-camel-case: true
+#  configuration:
+#      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -1,12 +1,9 @@
 package com.entity;
 
 
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.base.BaseEntity;
 import lombok.Data;
-
-import java.util.List;
 
 /**
  * @Author: xiake
@@ -23,8 +20,4 @@ public class Role extends BaseEntity {
 
     //描述
     private String description;
-
-    //角色权限
-    @TableField(exist = false)
-    private List<Menu> permissions;
 }
