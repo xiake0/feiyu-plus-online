@@ -14,6 +14,7 @@
         <module>feiyu-user</module>
         <module>config</module>
         <module>feiyu-video</module>
+        <module>feiyu-authentication</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -50,6 +51,12 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-bus</artifactId>
+                <version>${spring.config.version}</version>
             </dependency>
 
             <!-- mybatis启动器 -->

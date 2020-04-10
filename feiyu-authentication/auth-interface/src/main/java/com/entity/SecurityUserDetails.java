@@ -1,8 +1,6 @@
-package com.security;
+package com.entity;
 
 import com.alibaba.druid.util.StringUtils;
-import com.entity.Role;
-import com.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

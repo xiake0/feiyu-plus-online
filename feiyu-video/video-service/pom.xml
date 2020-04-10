@@ -34,8 +34,8 @@
         </dependency>
 
         <dependency>
-            <groupId>com.feiyu-plus-online.user-service</groupId>
-            <artifactId>user-service</artifactId>
+            <groupId>com.feiyu-plus-online.user-interface</groupId>
+            <artifactId>user-interface</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
@@ -48,6 +48,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
         <dependency>

@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/feiyu-authentication/auth-interface/auth-interface.iml" filepath="$PROJECT_DIR$/feiyu-authentication/auth-interface/auth-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feiyu-authentication/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/feiyu-authentication/auth-service/auth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feiyu-authentication/feiyu-authentication.iml" filepath="$PROJECT_DIR$/feiyu-authentication/feiyu-authentication.iml" />
       <module fileurl="file://$PROJECT_DIR$/feiyu-plus-online.iml" filepath="$PROJECT_DIR$/feiyu-plus-online.iml" />
       <module fileurl="file://$PROJECT_DIR$/feiyu-user/feiyu-user.iml" filepath="$PROJECT_DIR$/feiyu-user/feiyu-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/feiyu-video/feiyu-video.iml" filepath="$PROJECT_DIR$/feiyu-video/feiyu-video.iml" />

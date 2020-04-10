@@ -3,10 +3,10 @@ package com.service.impl;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.client.UserClient;
 import com.entity.Comment;
 import com.entity.User;
 import com.mapper.CommentMapper;
-import com.mapper.UserMapper;
 import com.service.CommentService;
 import com.vo.PageVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +27,7 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
     private CommentMapper commentMapper;
 
     @Autowired
-    private UserMapper userMapper;
+    private UserClient userClient;
 
 
     //获取视频评论
@@ -37,7 +37,7 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
         IPage<Comment> iPage=commentMapper.getComment(commentPage,pid);
         List<Comment> comments=iPage.getRecords();
         for(Comment comment:comments){
-            User user=userMapper.getUserByUserId(comment.getOwnerId());
+            User user=userClient.getUserByUserId(comment.getOwnerId());
             comment.setUser(user);
         }
         return iPage;

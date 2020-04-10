@@ -1,10 +1,7 @@
-package com.security;
+package com;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.security.permission.AuthenticationAccessDeniedHandler;
-import com.security.permission.MetadataSource;
-import com.security.permission.UrlAccessDecisionManager;
 import com.utils.ResultUtil;
 import com.utils.UserDetailsUtils;
 import com.vo.Result;

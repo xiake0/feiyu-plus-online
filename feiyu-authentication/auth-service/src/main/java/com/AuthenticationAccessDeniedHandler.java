@@ -1,4 +1,4 @@
-package com.security.permission;
+package com;
 
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;

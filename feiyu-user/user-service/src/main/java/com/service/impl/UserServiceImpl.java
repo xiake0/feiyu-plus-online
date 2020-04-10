@@ -62,6 +62,11 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         user.setPassword("rrr");
         userMapper.insert(user);
     }
+
+    @Override
+    public User getUserByUserId(String uid) {
+        return userMapper.getUserByUserId(uid);
+    }
 //
 //    /**
 //     * 验证数据库是否存在该用户

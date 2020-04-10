@@ -117,6 +117,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.0.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.0.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.0.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.0.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.0.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:2.7.9" level="project" />
@@ -145,11 +146,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.8" level="project" />
     <orderEntry type="module" module-name="config" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-security:2.0.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.0.8.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:5.0.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.0.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:5.0.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-test:2.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-test:2.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:2.0.4.RELEASE" level="project" />

@@ -12,6 +12,6 @@ public interface UserService extends IService<User> {
     User getUserByUsername(String username);
 
     void addUser();
-//
-//    Integer getCounts(String username);
+
+    User getUserByUserId(String uid);
 }

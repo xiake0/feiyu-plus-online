@@ -1,6 +1,6 @@
 package com.utils;
 
-import com.security.SecurityUserDetails;
+import com.entity.SecurityUserDetails;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 /**

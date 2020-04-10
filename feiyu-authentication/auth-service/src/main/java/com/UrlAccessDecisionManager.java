@@ -1,4 +1,4 @@
-package com.security.permission;
+package com;
 
 import org.springframework.security.access.AccessDecisionManager;
 import org.springframework.security.access.AccessDeniedException;
@@ -35,6 +35,14 @@ public class UrlAccessDecisionManager implements AccessDecisionManager {
                 } else return;
             }
             Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+
+            /**有毒的lambda**/
+//             authorities.forEach(item -> {
+//                System.out.println(item.getAuthority());
+//                if (item.getAuthority().equals(needRole)) {
+//                    return;
+//                }
+//            });
             for (GrantedAuthority authority : authorities) {
                 System.out.println(authority.getAuthority());
                 if (authority.getAuthority().equals(needRole)) {
