@@ -3,11 +3,11 @@ package com.service.impl;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.client.UserClient;
 import com.entity.Comment;
 import com.entity.User;
 import com.mapper.CommentMapper;
 import com.service.CommentService;
+import com.service.UserService;
 import com.vo.PageVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,8 +26,11 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
     @Autowired
     private CommentMapper commentMapper;
 
+//    @Autowired
+//    private UserClient userClient;
+
     @Autowired
-    private UserClient userClient;
+    private UserService userService;
 
 
     //获取视频评论
@@ -37,7 +40,7 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
         IPage<Comment> iPage=commentMapper.getComment(commentPage,pid);
         List<Comment> comments=iPage.getRecords();
         for(Comment comment:comments){
-            User user=userClient.getUserByUserId(comment.getOwnerId());
+            User user=userService.getUserByUserId(comment.getOwnerId());
             comment.setUser(user);
         }
         return iPage;

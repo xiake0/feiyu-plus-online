@@ -1,4 +1,4 @@
-package com;
+package com.security;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -58,14 +58,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/sys/user/login_p",
-                "index.html",
-                "static/**",
-                "/swagger/**",
-                "/**/v2/api-docs",
-                "/swagger-ui.html",
-                "/swagger-resources/**",
-                "/webjars/**");
+        web.ignoring().antMatchers("/sys/login_p","/sys/get");
     }
 
     @Override

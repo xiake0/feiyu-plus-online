@@ -67,6 +67,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     public User getUserByUserId(String uid) {
         return userMapper.getUserByUserId(uid);
     }
+
 //
 //    /**
 //     * 验证数据库是否存在该用户
