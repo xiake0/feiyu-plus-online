@@ -20,3 +20,10 @@ eureka:
   instance:
     lease-expiration-duration-in-seconds: 15 #过期时间
     lease-renewal-interval-in-seconds: 5   #心跳时间
+
+#安全配置
+security:
+  #oauth2配置
+  oauth2:
+    resource:
+#      filter-order: 3

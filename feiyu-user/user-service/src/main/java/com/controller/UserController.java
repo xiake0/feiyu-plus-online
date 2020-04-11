@@ -3,7 +3,6 @@ package com.controller;
 import com.entity.User;
 import com.service.UserService;
 import com.utils.ResultUtil;
-import com.utils.UserDetailsUtils;
 import com.vo.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
